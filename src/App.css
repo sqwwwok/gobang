@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-width: 0;
+}
+
+button.restart{
+  margin: 0.1rem;
+  padding: 0.1rem;
+  font-size: 1rem;
+  background-color: white;
+  border: solid black 0.01rem;
+  cursor: pointer;
+}
+
+.gobang{
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  border: black solid 2px;
+}
+
+.gobang-container{
+  display: grid;
+  width: 30rem;
+  height: 30rem;
+  gap: 0;
+}
+
+.gobang-board{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.intersection-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 0;
+  margin: 0;
+}
+
+.intersection{
+  cursor: pointer;
+  margin: auto;
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+}
+
+.intersection.black{
+  background-color: black;
+}
+
+.intersection.white{
+  background-color: white;
+  border: solid black 1px;
+}
+
